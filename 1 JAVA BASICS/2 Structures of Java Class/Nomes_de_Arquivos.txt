@@ -1,0 +1,9 @@
+Rgras para nomes de arquivos e classe.
+
+1) um arquvio java não precissa necessariamente ter o mesmo nome da classe.
+   desde que esta classe não seja publica.
+
+3) Um arquivo pode ter vários tipos. Porém se algum desses tipos for público, 
+   o arquivo deverá ter o mesmo nome do Tipo.
+
+4) Um arquivo só pode ter uma classe pública.
