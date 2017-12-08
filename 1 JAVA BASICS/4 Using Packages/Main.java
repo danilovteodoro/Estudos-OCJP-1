@@ -61,9 +61,26 @@
          import static com.graphics.Constantes.*;
          agora pode usar diretamente a constante EXEMPLO e o método exemplo().
          ao invés de: Constantes.EXEMPLO e Constantes.exmplo();
-         
-           
-          
+
+
+  Obs: houver um import para pacotes que tenham tipos com o mesmo 
+       nome e no código não haja uma instancia desse tipo,
+       o código irá compilar. Ex:
+          se houver :
+          import com.graphics.*;
+          import java.awt.*;             
+          e não tenha:
+          new Rectangle();
+        o código irá compilar. Só precisará no coso de criar uma
+        instancia de Rectangle, informar o caminho completo do tipo.
+         com.graphics.Rectangle rec = new com.graphics.Rectangle();
+         java.awt.Rectangle rec2 = new java.awt.Rectangle();
+       
+       E caso haja mais de uma importação para tipos de mesmo nome,
+       o programa não compilará.Ex:
+       import java.awt.Rectangle;
+       import com.graphics.Rectangle;
+       NAO COMPILARÁ !
 
 */
 //import com.graphics.Rectangle; //Importa a classe Rectangle.
