@@ -60,6 +60,18 @@
                 Os números aceitos devem estar entre 0 e 7.
               ex: 
                 int numOctal = 0754;
+  
+    base hexadecimal: basta colocar o 0x antes do valor.
+                     Os números hexadecimais devem estar entre
+                     0 e 9 e letras de a até f.
+                    ex: 
+                     int numHexadecimal = 0xf1;
+
+   base binária: basta colocar o 0b antes do valor.
+                 os numeros da base binária so aceitam valores de
+                 0 e 1.
+                ex:
+                 int numBinario = 0b0010; //Número na base binária.                
 
  
 */
@@ -90,6 +102,8 @@ class Main{
     char c = 'A';
     System.out.println("Valor do char : "+c);
     c = 68; //O char também é um valor numérico. Representa um caractere unicode.
+    System.out.println("Valor do char : "+c);
+    c = '\u0065'; //O char representado como unicode.
     System.out.println("Valor do char : "+c);
    
    //As campos de instancia e de classe assumem o valor padrão
